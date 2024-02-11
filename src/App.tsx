@@ -1,14 +1,14 @@
 import React from 'react'
-import {useFetch} from './hooks/useFetch'
-
-const LISTBREWERIES = 'https://api.openbrewerydb.org/vi/breweries'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import BreweryDetail from './pages/BreweryDetail'
 
 const App = () => {
-  const { data, loading } = useFetch(LISTBREWERIES)
-
-
   return (
-    <div>App</div>
+    <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path='/breweries/:id' element={<BreweryDetail />} />
+  </Routes>
   )
 }
 
