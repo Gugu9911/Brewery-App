@@ -9,7 +9,8 @@ const BreweryCard = ({ brewery }: { brewery: Brewery }) => {
             variant="outlined" 
             sx={{ 
                 maxWidth: 345, 
-                width: '100%', 
+                width: '300px', 
+                height:'150px',
                 bgcolor: '#e0ffcd',
                 boxShadow: 3, 
                 ':hover': { 

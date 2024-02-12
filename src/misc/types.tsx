@@ -1,3 +1,5 @@
+import SearchBar from "../components/SearchBar";
+
 export type Brewery = {
   id: string;
   name: string;
@@ -15,4 +17,11 @@ export type Brewery = {
   website_url: string;
   state: string;
   street: string;
+};
+
+export type Form = {
+  username: string;
+  email: string;
+  phone?: string;
+  feedback: string;
 };
